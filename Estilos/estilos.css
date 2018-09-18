@@ -1,0 +1,136 @@
+#Cabecera
+{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+	flex-flow: column;
+}
+#Titulo
+{
+  text-align: left;
+}
+#Enlaces
+{
+  text-align: right;
+  padding: 0px 10px 1px 0px;
+}
+a{
+  color: white;
+}
+#EstaPagina
+{
+  text-decoration: none;
+}
+#ImagenCentral
+{
+  text-align: center;
+  background-color: #82c3a6;
+  padding: 10px;
+}
+#ImagenSecundaria
+{
+  background-color: #d5c75f;
+  text-align: center;
+  border: 1px solid black;
+}
+#ImagenSecundaria img
+{
+  width: 300px;
+  height: 200px;
+}
+.contenedor {
+	margin: 0;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.c1 {
+	width: 50%;
+}
+.c2 {
+	width: 50%;
+}
+#imagen1 img{
+  box-shadow: 2px 2px 0 #82c3a6;
+  /*box-shadow: 2px 2px #82c3a6;
+  transition-property: rotate;
+	transition-duration: 0.5s;*/
+}
+#imagen1 img:hover{
+  transform: rotate(10deg);
+}
+#imagen2 img {
+  box-shadow: 2px 2px 0 #82c3a6;
+  /*transition-property: width;
+	transition-duration: 0.5s;*/
+}
+#imagen2 img:hover{
+  transform: translate(20px, -5px);
+}
+footer
+{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+	flex-flow: row;
+}
+.Contacto
+{
+  width: 25%;
+  height: 100px;
+}
+.Terminos
+{
+  width: 25%;
+  height: 100px;
+}
+.Redes
+{
+  width: 25%;
+  height: 100px;
+}
+.Derechos
+{
+  width: 25%;
+  height: 100px;
+}
+#copyright
+{
+  width: 15px;
+  height: 15px;
+}
+article[class^='caja']/*que comience con la palabra caja*/
+{
+  display: inline-block;
+  height: 220px;
+  width: 400px;
+  text-align: justify;
+  padding: 10px;
+}
+/*Paisajes*/
+#imagenp1
+{
+  filter: blur(10px);
+}
+#imagenp2, #imagenp4, #imagenp6{
+  filter: grayscale(100%);
+}
+#imagenp3
+{
+  filter: sepia(90%);
+}
+/*Rostros*/
+#imagenr1
+{
+  filter: blur(10px);
+}
+#imagenr2, #imagenr4, #imagenr6{
+  filter: grayscale(100%);
+}
+#imagenr3
+{
+  filter: sepia(90%);
+}
