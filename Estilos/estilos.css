@@ -1,114 +1,239 @@
+@font-face {
+	font-family: Dancing;
+	src: url(../fuentes/dancing-script.ttf);
+}
+
+/*Animación del Body*/
+@keyframes animacion_header
+{
+  0% {
+    position: relative;
+    margin-top: 150%;
+  }
+  60% {
+    position: relative;
+    margin-top: -5%;
+  }
+  100% {
+    position: relative;
+    margin-top: 0%;
+  }
+}
+body{
+  font-family: "Dancing";/*Utiliza la tipografía Dancing Script*/
+	background-color: #02010a;/*Establece el color de fondo negro #02010a*/
+
+  animation-name: animacion_header;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+img
+{
+	box-shadow: 2px 2px 0 #82c3a6;/*Cada imagen tiene un efecto de sombra de 2px con color #02010a*/
+}
+
+.Contenido
+{
+	width: 100%;
+}
+
 #Cabecera
 {
-  background-color: #5b7989;
-  color: white;
-  text-shadow: 2px 2px #02010a;
-  border-radius: 10px 10px 0px 0px;
-  display: flex;
-	flex-flow: column;
+  background-color: #5b7989;/*Establece el fondo de color #5b7989*/
+  color: white;/*en blanco la letra*/
+  text-shadow: 2px 2px #02010a; /*la letra debe tener una sombra de 2px de color #02010a*/
+  border-radius: 10px 10px 0px 0px;/*Aplica bordes redondeados en las esquinas superiores a 10px*/
+	display: flex;
+	flex-flow: row wrap;
 }
+
 #Titulo
 {
   text-align: left;
+	width: 50%;
 }
+
 #Enlaces
 {
   text-align: right;
   padding: 0px 10px 1px 0px;
+	width: 50%;
 }
-a{
+
+@media all and (max-width: 900px) {
+	#Titulo {
+		text-align: center;
+		width: 100%;
+		order: 1;
+	}
+	#Enlaces {
+		text-align: center;
+		width: 100%;
+		order: 2;
+	}
+}
+
+header a{
   color: white;
 }
+
 #EstaPagina
 {
-  text-decoration: none;
+  text-decoration: none;/*La página actual debe tener estilo sin subrayado*/
 }
-#ImagenCentral
-{
-  text-align: center;
-  background-color: #82c3a6;
-  padding: 10px;
-}
-#ImagenSecundaria
-{
-  background-color: #d5c75f;
-  text-align: center;
-  border: 1px solid black;
-}
-#ImagenSecundaria img
-{
-  width: 300px;
-  height: 200px;
-}
-.contenedor {
+
+.FilaImagenSecundaria {
+	background-color: #d5c75f;
+	border: 1px solid black;/*Aplica como color de fondo #d5c75f y un borde de 1px*/
+	text-align: center;
+
 	margin: 0;
-  padding: 0;
+	padding: 0;
   width: 100%;
 	display: flex;
 	flex-flow: row wrap;
 }
-.c1 {
+.FilaImagenSecundaria .caja1 {
 	width: 50%;
 }
-.c2 {
+.FilaImagenSecundaria .caja2 {
 	width: 50%;
 }
-#imagen1 img{
-  box-shadow: 2px 2px 0 #82c3a6;
-  /*box-shadow: 2px 2px #82c3a6;
-  transition-property: rotate;
-	transition-duration: 0.5s;*/
+
+@media all and (max-width: 900px) {
+	.FilaImagenSecundaria .caja1 {
+		width: 100%;
+		order: 1;
+	}
+	.FilaImagenSecundaria .caja2 {
+		width: 100%;
+		order: 2;
+	}
 }
-#imagen1 img:hover{
-  transform: rotate(10deg);
+
+.FilaImagenesPaisajesYRetratos {
+	background-color: #d5c75f;
+	margin: 0;
+	padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
 }
-#imagen2 img {
-  box-shadow: 2px 2px 0 #82c3a6;
-  /*transition-property: width;
-	transition-duration: 0.5s;*/
+.FilaImagenesPaisajesYRetratos .caja1 {
+	width: 33.3%;
 }
-#imagen2 img:hover{
-  transform: translate(20px, -5px);
+.FilaImagenesPaisajesYRetratos .caja2 {
+	width: 33.3%;
+}
+.FilaImagenesPaisajesYRetratos .caja3 {
+	width: 33.3%;
+}
+
+@media all and (max-width: 900px) {
+	.FilaImagenesPaisajesYRetratos .caja1 {
+		width: 100%;
+		order: 1;
+	}
+	.FilaImagenesPaisajesYRetratos .caja2 {
+		width: 100%;
+		order: 2;
+	}
+	.FilaImagenesPaisajesYRetratos .caja3 {
+		width: 100%;
+		order: 3;
+	}
+}
+
+#ImagenCentral
+{
+  text-align: center;/*Esta secccion debe tener la imagen centrada*/
+  background-color: #82c3a6;/*Establece como color de fondo #82c3a6*/
+  padding: 10px;
+}
+
+#imagensecundaria1 img:hover{
+  transform: rotate(10deg);/*aplica un efecto de rotación de 10 grados*/
+}
+
+#imagensecundaria2 img:hover{
+  transform: translate(20px, -5px);/*aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha*/
 }
 footer
 {
-  background-color: #C6d5c5;
-  border-radius: 0px 0px 10px 10px;
-  display: flex;
-	flex-flow: row;
+  background-color: #C6d5c5;/*Aplica el color de fondo #C6d5c5*/
+  border-radius: 0px 0px 10px 10px;/*Aplica bordes redondeados en las esquinas inferiores a 10px*/
+	display: flex;
+	flex-flow: row wrap;
+  padding: 10px;
+}
+footer .Contacto
+{
+	width: 25%;
+}
+footer .Terminos
+{
+	width: 25%;
+}
+footer .Redes
+{
+	width: 25%;
+}
+footer .Derechos
+{
+	width: 25%;
+}
+@media all and (max-width: 900px) {
+	footer .Contacto {
+		width: 100%;
+		order: 1;
+	}
+	footer .Terminos {
+		width: 100%;
+		order: 2;
+	}
+	footer .Redes {
+		width: 100%;
+		order: 3;
+	}
+	footer .Derechos {
+		width: 100%;
+		order: 4;
+	}
+}
+
+footer a{
+  color: black;
 }
 .Contacto
 {
   width: 25%;
-  height: 100px;
 }
 .Terminos
 {
   width: 25%;
-  height: 100px;
 }
 .Redes
 {
   width: 25%;
-  height: 100px;
 }
 .Derechos
 {
   width: 25%;
-  height: 100px;
 }
 #copyright
 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
-article[class^='caja']/*que comience con la palabra caja*/
+.imgRedes
 {
-  display: inline-block;
-  height: 220px;
-  width: 400px;
-  text-align: justify;
-  padding: 10px;
+	width: 20px;
+	height: 20px;
+	padding: 1px;
 }
 /*Paisajes*/
 #imagenp1
