@@ -36,12 +36,7 @@ img
 	box-shadow: 2px 2px 0 #82c3a6;/*Cada imagen tiene un efecto de sombra de 2px con color #02010a*/
 }
 
-.Contenido
-{
-	width: 100%;
-}
-
-#Cabecera
+.Cabecera
 {
   background-color: #5b7989;/*Establece el fondo de color #5b7989*/
   color: white;/*en blanco la letra*/
@@ -51,13 +46,13 @@ img
 	flex-flow: row wrap;
 }
 
-#Titulo
+.Titulo
 {
   text-align: left;
 	width: 50%;
 }
 
-#Enlaces
+.Enlaces
 {
   text-align: right;
   padding: 0px 10px 1px 0px;
@@ -65,12 +60,12 @@ img
 }
 
 @media all and (max-width: 900px) {
-	#Titulo {
+	.Titulo {
 		text-align: center;
 		width: 100%;
 		order: 1;
 	}
-	#Enlaces {
+	.Enlaces {
 		text-align: center;
 		width: 100%;
 		order: 2;
@@ -135,14 +130,17 @@ header a{
 
 @media all and (max-width: 900px) {
 	.FilaImagenesPaisajesYRetratos .caja1 {
+		text-align: center;
 		width: 100%;
 		order: 1;
 	}
 	.FilaImagenesPaisajesYRetratos .caja2 {
+		text-align: center;
 		width: 100%;
 		order: 2;
 	}
 	.FilaImagenesPaisajesYRetratos .caja3 {
+		text-align: center;
 		width: 100%;
 		order: 3;
 	}
