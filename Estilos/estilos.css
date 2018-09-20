@@ -233,27 +233,15 @@ footer a{
 	height: 20px;
 	padding: 1px;
 }
-/*Paisajes*/
-#imagenp1
+/*Paisajes y Rostros*/
+#imagen1
 {
   filter: blur(10px);
 }
-#imagenp2, #imagenp4, #imagenp6{
+#imagen2, #imagen4, #imagen6{
   filter: grayscale(100%);
 }
-#imagenp3
-{
-  filter: sepia(90%);
-}
-/*Rostros*/
-#imagenr1
-{
-  filter: blur(10px);
-}
-#imagenr2, #imagenr4, #imagenr6{
-  filter: grayscale(100%);
-}
-#imagenr3
+#imagen3
 {
   filter: sepia(90%);
 }
